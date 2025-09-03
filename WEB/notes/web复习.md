@@ -104,6 +104,8 @@ WebSocket 连接始于一个普通的 HTTP 请求。客户端通过一个特殊�
 
 可以通过 `XMLHttpRequest` 或 `fetch`向不同源的服务器发送ajax请求（请求会发出但是响应会被浏览器拦截），恶意网站通过这点以及自动发送跨站自动发送cookie（SameSite属性）实现CSRF（跨域写）
 
+## 谁在执行同源策略？浏览器
+
 ## 跨域解决方案
 
 ### 前端之间
@@ -286,3 +288,4 @@ closed |filtered      罕见情况
 IDS设置在**旁路**，只负责警报并记录日志     HIDS      NIDS        snort
 
 IPS串联在主线路（**在线部署**）可以丢弃恶意数据包    snort-inline
+
